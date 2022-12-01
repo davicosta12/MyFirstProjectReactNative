@@ -50,7 +50,7 @@ const Login: FunctionComponent<Props> = (props) => {
         <TouchableOpacity
           style={styles.button}
         >
-          <Text style={styles.textButton}>Entrar</Text>
+          <Text style={styles.textButton} onPress={() => props.navigation.navigate("Home")}>Entrar</Text>
         </TouchableOpacity>
         <Text style={styles.textCreateAccount} onPress={() => props.navigation.navigate("Register")}> Criar uma nova conta</Text>
       </View>
