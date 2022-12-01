@@ -3,6 +3,7 @@ import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { styles } from './LoginStyles';
 
 interface Props {
+  navigation: any;
 }
 
 const Login: FunctionComponent<Props> = (props) => {
@@ -18,7 +19,7 @@ const Login: FunctionComponent<Props> = (props) => {
         <View style={styles.imageContainer}>
           <Image
             style={styles.ImageUserLogo}
-            source={require('../assets/user-blue.png')}
+            source={require('../../../assets/user-blue.png')}
           />
         </View>
       </View>
@@ -51,8 +52,9 @@ const Login: FunctionComponent<Props> = (props) => {
         >
           <Text style={styles.textButton}>Entrar</Text>
         </TouchableOpacity>
+        <Text style={styles.textCreateAccount} onPress={() => props.navigation.navigate("Register")}> Criar uma nova conta</Text>
       </View>
-    </View>
+    </View >
   );
 };
 

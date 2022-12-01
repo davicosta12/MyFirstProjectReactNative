@@ -18,10 +18,11 @@ export const styles = StyleSheet.create({
   titleInputText: {
     fontSize: 16,
     marginTop: 15,
-    marginBottom: 5
+    marginBottom: 5,
+    color: '#fff'
   },
   input: {
-    backgroundColor: '#FFF',
+    backgroundColor: '#f4f4f4',
     width: 250,
     height: 35,
     borderRadius: 5,
@@ -50,5 +51,11 @@ export const styles = StyleSheet.create({
   ImageUserLogo: {
     width: 100,
     height: 100
+  },
+  textCreateAccount: {
+    fontSize: 14,
+    marginTop: 15,
+    color: '#87CEFA',
+    textDecorationLine: 'underline'
   }
 });

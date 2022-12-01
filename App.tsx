@@ -1,9 +1,12 @@
-import Login from "./src/Components/Login/Login";
+import 'react-native-gesture-handler';
+import Routes from "./src/Routes";
 
 const App = () => {
 
   return (
-    <Login />
+    <>
+      <Routes />
+    </>
   );
 }
 
