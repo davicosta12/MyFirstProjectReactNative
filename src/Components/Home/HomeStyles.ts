@@ -4,18 +4,16 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#0d416e',
+    flexDirection: 'column'
   },
   flatListContainer: {
-    flex: 1,
+    flex: 3,
     marginTop: StatusBar.currentHeight || 0,
-    position: 'absolute',
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
-    paddingTop: 15,
-    paddingBottom: 15,
+    paddingTop: 20,
     paddingHorizontal: 30,
     width: '100%',
-    top: '40%',
     backgroundColor: '#c0cfd8',
   },
   titleFlatContainer: {
@@ -32,7 +30,7 @@ export const styles = StyleSheet.create({
     fontSize: 32,
   },
   cardContainer: {
-    flex: 3,
+    flex: .6,
     flexDirection: 'row',
     justifyContent: 'space-evenly'
   }

@@ -188,11 +188,11 @@ const Home: FunctionComponent<Props> = (props) => {
       </View>
 
       <View style={styles.flatListContainer}>
-        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginVertical: 8 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 15, marginBottom: 25 }}>
           <Text style={styles.titleFlatContainer}>Título</Text>
           <Text style={styles.subTitleFlatContainer}>Subtítulo</Text>
         </View>
-        <SafeAreaView>
+        <SafeAreaView style={{ paddingBottom: 75 }}>
           <FlatList
             data={DATA}
             renderItem={renderItem}
