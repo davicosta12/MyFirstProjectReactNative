@@ -178,10 +178,12 @@ const Home: FunctionComponent<Props> = (props) => {
 
         <ViewBase alignItems='center'>
           <VStack space={4} alignItems="center">
-            <IconButton size='lg' variant="solid" _icon={{
-              as: MaterialIcons,
-              name: "science"
-            }} />
+            <IconButton size='lg' variant="solid"
+              onPress={() => props.navigation.navigate("Detail")}
+              _icon={{
+                as: MaterialIcons,
+                name: "science"
+              }} />
           </VStack>
           <Text fontWeight="bold" color="#c0cfd8">Send</Text>
         </ViewBase>
